@@ -1,0 +1,43 @@
+/* These are the Tailwind imports, you need to keep this 3 lines*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Utility to have shadow in texts, I like to have it */
+@layer utilities {
+    @variants responsive {
+        .text-shadow {
+            text-shadow: 2px 2px 4px black;
+        }
+        .text-shadow-md {
+            text-shadow: 4px 4px 8px black;
+        }
+        .text-shadow-lg {
+            text-shadow: 15px 15px 30px black;
+        }
+        .text-shadow-none {
+            text-shadow: none;
+        }
+    }
+}
+
+/* Example of how to import a Font with Tailwind */
+@font-face {
+    font-family: 'Blockhead';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/you-blockhead.ttf');
+}
+
+/* Then you can decorate the elements with this class */
+.primary-text {
+    font-family: 'Blockhead';
+}
+/* End of text utilities */
+
+
+/* General styling, here you will add your own styles */
+body {
+    background-color: rgb(16, 53, 87);
+}

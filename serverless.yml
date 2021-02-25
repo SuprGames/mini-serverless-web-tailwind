@@ -1,0 +1,17 @@
+org: ${YOUR_ORGANIZATION}
+app: ${YOUR_APP}
+service: ${YOUR_SERVICE_NAME}
+
+provider:
+  name: aws
+  region: eu-central-1
+  timeout: 15
+
+plugins:
+  - serverless-finch
+
+custom:
+  client:
+    bucketName: ${YOUR_BUCKET_NAME}
+    distributionFolder: public
+    bucketPolicyFile: "s3-bucket-policy.json"
