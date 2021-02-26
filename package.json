@@ -7,7 +7,7 @@
     "dev": "postcss css/tailwind.css -o public/css/styles.css --watch",
     "build": "postcss css/tailwind.css -o public/css/styles.css",
     "start": "ws -d public",
-    "deploy": "npm run build && sls deploy"
+    "deploy": "npm run build && sls client deploy"
   },
   "keywords": [],
   "author": "",
